@@ -30,7 +30,9 @@ fieldset {
     padding: 0.5rem;
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
     width: 100%;
     min-height: 2em;
 }
