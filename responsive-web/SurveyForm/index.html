@@ -14,11 +14,11 @@
     <form action="/submit" method="POST" id="survey-form">
         <!-- Personal Information -->
         <fieldset>
-            <label for="name">Name: <input placeholder="Enter your name" id="name" name="name"></label>
-            <label for="email">Email: <input placeholder="Enter your email" type="email" id="email"
+            <label for="name" id="name-label">Name: <input required placeholder="Enter your name" id="name" name="name"></label>
+            <label for="email" id="email-label">Email: <input required placeholder="Enter your email" type="email" id="email"
                     name="email"></label>
-            <label for="age">Age: <input placeholder="Enter your age" min="13" max="113" type="number" name="age"
-                    id="age"></label>
+            <label for="number" id="number-label">Age: <input placeholder="Enter your age" min="13" max="113" type="number" name="number"
+                    id="number"></label>
             <label for="dropdown">What is your current state?
                 <select name="dropdown" id="dropdown">
                     <option checked value="">Select one...</p>
@@ -33,10 +33,10 @@
         <fieldset>
             <legend>What is your gender?</legend>
             <label for="gender-male">Male
-                <input type="radio" id="gender-male" name="gender" class="inline">
+                <input type="radio" id="gender-male" name="gender" value="Male" class="inline">
             </label>
             <label for="gender-female">Female
-                <input type="radio" id="gender-female" name="gender" class="inline">
+                <input type="radio" id="gender-female" name="gender" value="Female" class="inline">
             </label>
         </fieldset>
 
