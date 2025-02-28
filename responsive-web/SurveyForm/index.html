@@ -10,10 +10,52 @@
 
 <body>
     <h1 id="title">Survey</h1>
-    <p id="description">This is a short sentence telling you why do coplete this survey</p>
-    <form action="" id="survey-form">
-        <label><input type="text" id="name"></label>
-        <label><input type="text" id="email"></label>
+    <p id="description">This is a short sentence telling you why do complete this survey</p>
+    <form action="/submit" method="POST" id="survey-form">
+        <!-- Personal Information -->
+        <fieldset>
+            <label for="name">Name: <input placeholder="Enter your name" id="name" name="name"></label>
+            <label for="email">Email: <input placeholder="Enter your email" type="email" id="email"
+                    name="email"></label>
+            <label for="age">Age: <input placeholder="Enter your age" min="13" max="113" type="number" name="age"
+                    id="age"></label>
+            <label for="dropdown">What is your current state?
+                <select name="dropdown" id="dropdown">
+                    <option checked value="">Select one...</p>
+                    </option>
+                    <option value="1">Happy</option>
+                    <option value="2">Sad</option>
+                    <option value="3">Confused</option>
+                </select>
+            </label>
+        </fieldset>
+        <!-- Selection -->
+        <fieldset>
+            <legend>What is your gender?</legend>
+            <label for="gender-male">Male
+                <input type="radio" id="gender-male" name="gender" class="inline">
+            </label>
+            <label for="gender-female">Female
+                <input type="radio" id="gender-female" name="gender" class="inline">
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>What adjectives describe you?</legend>
+            <label>Perspicacious <input class="inline" type="checkbox" name="options" value="option1"></label>
+            <label>Equanimous <input class="inline" type="checkbox" name="options" value="option2"></label>
+            <label>Sagacious <input class="inline" type="checkbox" name="options" value="option3"></label>
+            <label>Obsequious  <input class="inline" type="checkbox" name="options" value="option4"></label>
+            <label>Munificent   <input class="inline" type="checkbox" name="options" value="option5"></label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Why did the chicken cross the road?</legend>
+            <label for="comments">
+                <textarea placeholder="It crossed the road because..." name="comments" id="comments" cols="2" rows="4"></textarea>
+            </label>
+        </fieldset>
+        <input type="submit" id="submit" value="Submit"/>
     </form>
 
 </body>
