@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+#img-div {
+    width: 100%;
+    border: 2px dashed orange;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+
+#image {
+    width: 100%; 
+    max-width: 1200px;
+    max-height: 900px;
+    height: auto;          
+    border-radius: 10px;
+}
