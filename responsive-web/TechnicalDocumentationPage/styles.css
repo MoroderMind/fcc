@@ -3,3 +3,82 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    font-family: sans-serif;
+    /* Set a default font */
+    line-height: 1.6;
+    /* Improve readability */
+    background-color: #f8f9fa;
+    /* Light background */
+    color: #333;
+    /* Darker text */
+    min-height: 100vh;
+    /* Ensure body covers full viewport */
+}
+
+img {
+    max-width: 100%;
+    /* Make images responsive */
+    height: auto;
+    /* Maintain aspect ratio */
+    display: block;
+    /* Prevent inline spacing issues */
+}
+
+a {
+    text-decoration: none;
+    /* Remove underlines */
+    color: inherit;
+    /* Use the same text color */
+}
+
+
+
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --font-size-base: 16px;
+}
+
+header {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.main-section {
+    width: 60%;
+    border: 2px solid black;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+#main-doc {
+    width: 100%;
+}
+
+.pre {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-left: 3px solid #f36d33;
+    color: #666;
+    page-break-inside: avoid;
+    font-family: monospace;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1em 1.5em;
+    display: block;
+    word-wrap: break-word;
+}
+
+.code-line{
+    padding-left: 4em;
+}
+
+.code-line-double{
+    padding-left: 8em;
+}
