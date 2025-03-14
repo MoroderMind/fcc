@@ -48,7 +48,6 @@ header {
 
 .main-section {
     width: 60%;
-    border: 2px solid black;
     margin: 0 auto;
     margin-bottom: 20px;
     padding: 20px;
@@ -81,4 +80,43 @@ header {
 
 .code-line-double{
     padding-left: 8em;
+}
+
+nav header {
+    font-size: 1.2rem;
+}
+
+nav {
+    display: flex;
+    padding: 20px;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #333;
+    color: whitesmoke;
+    align-items: center;
+}
+
+.link-box {
+    display: flex;
+    gap: 16px;
+}
+
+.nav-link:hover {
+    color:#f36d33
+}
+
+.nav-link {
+    border: 1px goldenrod ridge;
+    border-radius: 12%;
+    padding: 8px;
+}
+
+@media screen and (max-width: 600px){
+    p {
+        color: aquamarine;
+    }
+}
+
+header {
+    text-transform: capitalize;
 }
